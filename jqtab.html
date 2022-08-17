@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+	  
+      <title>Tab JQuery UI</title>
+      
+	  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet" type="text/css" />
+      <script src = "https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+		
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $("#MyTabDiv").tabs();
+
+          });
+      </script>
+		
+      <style type="text/css">
+         #MyTabDiv{font-size: 14px;}
+         #MyTabDiv div,#MyTabDiv p{background:#ffffff;}
+         .ui-widget-header {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+         img{
+            border: 3.5px solid black;
+         }
+         #INDF{
+            height: 421px;
+            width:25%;
+         }
+         #NAFIIM{
+            height: 421px;
+         }
+         #AFINA{
+            font-family: 'Tiro Gurmukhi',serif ;
+            font-size: 8.5vh;
+            text-align: center;
+            text-shadow: 5.5px -1px 10px greenyellow;
+            color:orangered;
+         } 
+      </style>
+   </head>
+   <body>
+    <div id="AFINA">ABOUT FOR INDIAN NATIONAL ANTHEM</div>
+      <div id="MyTabDiv">
+         <ul>
+            <li><a href="#tab1">My Tab 1</a></li>
+            <li><a href="#tab2">My Tab 2</a></li>
+            <li><a href="#tab3">My Tab 3</a></li>
+         </ul>
+         <div id="tab1">
+            <p>
+                <a href="NAFI.mp4">Video</a>
+            </p>
+         </div>
+         <div id="tab2">
+            <p>
+                <center>
+               <img src="NA.png">
+               <img src="INDF.jpg" id="INDF">
+               <img src="NAFIIM.jpg" id="NAFIIM">
+               </center>
+            </p>   
+         </div>
+         <div id="tab3">
+            <p>
+                The National Anthem of India is titled ‘Jana Gana Mana’. The song was originally composed in Bengali by India’s first Nobel laureate Rabindranath Tagore on December 11, 1911. The parent song, ‘Bharoto Bhagyo Bidhata’ is a Brahmo hymn which has five verses and only the first verse has been adopted as National Anthem. If put forward succinctly, the National Anthem conveys the spirit of pluralism or in more popular term the concept of ‘Unity in Diversity’, which lies at the core of India’s cultural heritage.         
+            </p>
+         </div>
+      </div><hr/>
+   </body>
+</html>
